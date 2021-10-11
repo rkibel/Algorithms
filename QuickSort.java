@@ -1,5 +1,5 @@
 class QuickSort{
-    void quickSort (int[]nums, int first, int last){
+    static void quickSort (int[]nums, int first, int last){
         int pivot, i, j, temp;
         if (first < last){
             pivot = first;
