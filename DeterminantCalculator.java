@@ -1,4 +1,3 @@
-
 public class DeterminantCalculator {
     public static int FindDeterminant(int[][]arr){
         int len = arr.length;
