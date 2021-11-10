@@ -1,8 +1,7 @@
-import java.util.Arrays;
 public class Tester {
     public static void main (String[] args){
-        int [] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 13, 31, 42, 63};
-        System.out.println(LinearSearch.linearSearch(arr, 42));
-        System.out.println(BinarySearch.binarySearch(arr, 42));
+        int[][] arr = {{3, -5, 5, 1}, {0, 0, 3, 0}, {4, -4, -5, 6}, {5, 0, 2, 4}};
+        //int[][]arr = {{0, 0}, {0, 0}};
+        System.out.println(DeterminantCalculator.FindDeterminant(arr));
     }
 }

@@ -1,7 +1,7 @@
 import java.util.*;
 public class ArraySpiral {
     public static List<Integer> spiral (int[][]arr){
-        List<Integer> output = new ArrayList();
+        List<Integer> output = new ArrayList<>();
         int i = 0, j = 0, imin = 0, imax = arr.length-1, jmin = 0, jmax = arr[0].length-1;
         for (int index = 0; index < i*j; index++){
             if (i == imin && j == jmin){    
