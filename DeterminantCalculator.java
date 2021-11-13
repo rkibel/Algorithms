@@ -18,15 +18,16 @@ public class DeterminantCalculator {
 
         //compute determinant using cofactor expansion along the first row
         for (int j = 0; j < arr[0].length; j++){
+            
             //initialize matrix of minors to any [0][j] value
             int lastcol = 0;
             for (int a = 1; a < len; a++){
                 for (int b = 0; b < len; b++){
-                    if (b == j)
-                        continue;
-                    minors[a-1][lastcol] = arr[a][b];
-                    lastcol++;
+                    if (b != j){
+                        minors[a-1][lastcol++] = arr[a][b];
+                    }
                 }
+                lastcol = 0;
             }
 
             //run recursion to find determinants of smaller matrices (if [0][j] value is 0 then ignore)
