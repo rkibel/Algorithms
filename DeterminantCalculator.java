@@ -1,5 +1,5 @@
 public class DeterminantCalculator {
-    public static int FindDeterminant(int[][]arr){
+    public static double FindDeterminant(double[][]arr){
         int len = arr.length;
         int wid = arr[0].length;
         //if it is not a square matrix throw error
@@ -11,10 +11,10 @@ public class DeterminantCalculator {
             return arr[0][0] * arr[1][1] - arr[0][1] * arr[1][0];
         
         //declare matrix of minors
-        int[][] minors = new int[len-1][wid-1];
+        double[][] minors = new double[len-1][wid-1];
 
         //initialize output value
-        int output = 0;
+        double output = 0;
 
         //compute determinant using cofactor expansion along the first row
         for (int j = 0; j < arr[0].length; j++){
@@ -41,7 +41,7 @@ public class DeterminantCalculator {
         
         return output;
     }
-    public static int FindDeterminantWithEigenValue(int[][]arr, int eigenvalue){
+    public static double FindDeterminantWithEigenValue(double[][]arr, double eigenvalue){
         for (int i = 0; i < arr.length; i++){
             arr[i][i] -= eigenvalue;
         }
