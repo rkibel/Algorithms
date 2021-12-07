@@ -36,6 +36,11 @@ public class DeterminantCalculator {
         }
         return output;
     }
+    public static double[][] simplifyMatrix(double[][]arr){
+        double [][] output = new double[arr.length][arr[0].length];
+        
+        return output;
+    }
     public static int FindDeterminantWithEigenValue(int[][]arr, int eigenvalue){
         for (int i = 0; i < arr.length; i++){
             arr[i][i] -= eigenvalue;
